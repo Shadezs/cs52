@@ -163,12 +163,7 @@ void CreateShape(Pixel p[], int nPixels, Shapes shape)
 		{
 			for (int j = 0; j < HEIGHT; j++)
 			{
-				if (j==0 && i >=1)
-				{
-					p[r].color = Colors::WHITE;
-					r++;
-				}
-				if(i%2==1 || j%2==0)
+				if (i >= j )
 				{
 					p[r].color = Colors::WHITE;
 					r++;
@@ -176,6 +171,7 @@ void CreateShape(Pixel p[], int nPixels, Shapes shape)
 				else
 				{
 					p[r].color = Colors::BLACK;
+					r++;
 				}
 			}
 			
